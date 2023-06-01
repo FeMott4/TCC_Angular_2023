@@ -21,7 +21,7 @@ import { provideStorage, getStorage } from '@angular/fire/storage';
     AppRoutingModule,
     
     //importação de funções para que o firebase funcione no projeto
-    provideFirebaseApp(() => initializeApp(environment.firebase)), 
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)), 
     provideAuth(() => getAuth()), 
     provideFirestore(() => getFirestore()), 
     provideStorage(() => getStorage())
