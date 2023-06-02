@@ -11,33 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  
   {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    path: 'clientes',
+    loadChildren: () => import('./clientes/clientes.module').then( m => m.ClientesPageModule)
   },
   {
-    path: 'register',
-    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+    path: 'contato',
+    loadChildren: () => import('./contato/contato.module').then( m => m.ContatoPageModule)
   },
   {
-    path: 'cadastrar-animal',
-    loadChildren: () => import('./cadastrar-animal/cadastrar-animal.module').then( m => m.CadastrarAnimalPageModule)
-  },
-  {
-    path: 'visualizar-animal',
-    loadChildren: () => import('./visualizar-animal/visualizar-animal.module').then( m => m.VisualizarAnimalPageModule)
-  },
-  {
-    path: 'consultar-animal',
-    loadChildren: () => import('./consultar-animal/consultar-animal.module').then( m => m.ConsultarAnimalPageModule)
-  },
-  {
-    path: 'editar-animal',
-    loadChildren: () => import('./editar-animal/editar-animal.module').then( m => m.EditarAnimalPageModule)
-  },
-  {
-    path: 'remover-animal',
-    loadChildren: () => import('./remover-animal/remover-animal.module').then( m => m.RemoverAnimalPageModule)
+    path: 'servico',
+    loadChildren: () => import('./servico/servico.module').then( m => m.ServicoPageModule)
   },
 ];
 

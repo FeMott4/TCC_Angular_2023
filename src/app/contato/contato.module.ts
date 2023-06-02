@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RemoverAnimalPageRoutingModule } from './remover-animal-routing.module';
+import { ContatoPageRoutingModule } from './contato-routing.module';
 
-import { RemoverAnimalPage } from './remover-animal.page';
+import { ContatoPage } from './contato.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RemoverAnimalPageRoutingModule
+    ContatoPageRoutingModule
   ],
-  declarations: [RemoverAnimalPage]
+  declarations: [ContatoPage]
 })
-export class RemoverAnimalPageModule {}
+export class ContatoPageModule {}

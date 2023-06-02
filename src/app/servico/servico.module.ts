@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ConsultarAnimalPageRoutingModule } from './consultar-animal-routing.module';
+import { ServicoPageRoutingModule } from './servico-routing.module';
 
-import { ConsultarAnimalPage } from './consultar-animal.page';
+import { ServicoPage } from './servico.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ConsultarAnimalPageRoutingModule
+    ServicoPageRoutingModule
   ],
-  declarations: [ConsultarAnimalPage]
+  declarations: [ServicoPage]
 })
-export class ConsultarAnimalPageModule {}
+export class ServicoPageModule {}
