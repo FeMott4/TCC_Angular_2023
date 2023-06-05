@@ -1,13 +1,42 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>servico</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">servico</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <!-- Barra de navegação -->
+  
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-item>
+        <ion-title class="titulo1">Malvzuco</ion-title>
+      </ion-item>
+
+      <ion-button class="botao" color="white" expand="full" routerLink="/home">Página Incial</ion-button>
+
+      <ion-button class="botao" color="white" expand="full" routerLink="/clientes">Cliente</ion-button>
+
+      <ion-button class="botao" color="white" expand="full" routerLink="/contato">Contato</ion-button>
+    
+      <ion-button class="botao" color="white" expand="full" routerLink="/servico">Serviços</ion-button>
+    </ion-header>
+  </ion-menu>
+
+  
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Malvzuco</ion-title>
+        
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">  </ion-content>
+  </div>
+
+  <!--Corpo-->
+
+  <!-- Rodapé -->
+
+  
+  
 </ion-content>
