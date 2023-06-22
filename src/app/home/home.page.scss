@@ -7,13 +7,19 @@
 .titulo1{
   margin-bottom: 3vh;
 }
+// cards
 .conteudo{
   margin-top: 5vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
+ 
 }
-// cards
+.centralizacao{
+  display: flex;
+  justify-content: center;
+}
 .card_info{
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
+ 
