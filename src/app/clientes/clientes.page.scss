@@ -4,8 +4,14 @@
     color: black;
   
   }
-  .titulo1{
+.titulo1{
 
-    margin-bottom: 3vh;
-  } 
+  margin-bottom: 3vh;
+} 
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
   
