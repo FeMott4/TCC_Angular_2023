@@ -4,17 +4,17 @@
   
   <ion-menu contentId="main-content">
     <ion-header>
-      <ion-item>
+      <ion-item color="tertiary">
         <ion-title class="titulo1">Malvzuco</ion-title>
       </ion-item>
 
-      <ion-button class="botao" color="white" expand="full" routerLink="/home">Página Incial</ion-button>
+      <ion-button class="botao" color="tertiary" shape="round" expand="full" routerLink="/home">Página Incial</ion-button>
 
-      <ion-button class="botao" color="white" expand="full" routerLink="/clientes">Cliente</ion-button>
+      <ion-button class="botao" color="tertiary" shape="round" expand="full" routerLink="/clientes">Cliente</ion-button>
 
-      <ion-button class="botao" color="white" expand="full" routerLink="/contato">Contato</ion-button>
+      <ion-button class="botao" color="tertiary" shape="round" expand="full" routerLink="/contato">Contato</ion-button>
     
-      <ion-button class="botao" color="white" expand="full" routerLink="/servico">Serviços</ion-button>
+      <ion-button class="botao" color="tertiary" shape="round" expand="full" routerLink="/servico">Serviços</ion-button>
     </ion-header>
   </ion-menu>
 
@@ -22,7 +22,7 @@
 
   <div class="ion-page" id="main-content">
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -38,18 +38,18 @@
           <h2>Siga-nos</h2>
         </ion-col>
         
-        <ion-col class="conteudo" size-lg="2" size-md="12" size="12">
-          <ion-list>
+        <ion-col class="conteudo" size-lg="4" size-md="12" size="12">
+          <ion-list >
             <ion-item>
-              <ion-input label="Nome:" placeholder="Nome completo" required></ion-input>
+              <ion-input label="Nome:" label-placement="floating" placeholder="Nome completo" required></ion-input>
             </ion-item>
         
             <ion-item>
-              <ion-input label="E-mail:" type="email" placeholder="E-mail válido" required></ion-input>
+              <ion-input label="E-mail:" type="email" label-placement="floating" placeholder="E-mail válido" required></ion-input>
             </ion-item>
 
             <ion-item>
-              <ion-input label="Telefone:" type="tel" placeholder="Telefone válido" required></ion-input>
+              <ion-input label="Telefone:" type="tel" label-placement="floating" placeholder="Telefone válido" required></ion-input>
             </ion-item>
 
             <ion-button class="botao_consulta" color="primary" expand="full" shape="round" type="submit">Consultar</ion-button>
