@@ -1,29 +1,41 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .botao{
   width: 100%;
   margin-bottom: 2vh;
   color: black;
-
+  margin-top: 1vh;
 }
 .titulo1{
   margin-bottom: 3vh;
 }
 // cards
 .conteudo{
-  margin-top: 5vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
- 
+   
 }
 .centralizacao{
   display: flex;
   justify-content: center;
 }
-.card_info{
-  margin-top: 5vh;
+ion-card{
+  margin-bottom: 4vh;
+
+  
 }
-.imagem {
-  margin-top:3vh;
+// textos
+ion-card h1{
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
   text-align: center;
+  font-weight: bold;
+  
 }
- 
+ion-card ion-card-content{
+  font-size: medium;
+  color: black;
+  padding: 1vh;
+
+} 
