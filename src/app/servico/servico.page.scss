@@ -1,11 +1,86 @@
+// Menu fundo
+.fundo_menu{
+  --ion-toolbar-background:#0B2C4D;
+  --ion-item-background:#040F1A;
+
+}
+ion-button{
+  --background:#0B2C4D;
+  
+}
+.menu_botao{
+  background: rgb(4,15,26);
+  background: linear-gradient(190deg, rgba(4,15,26,1) 0%, rgba(11,44,77,1) 35%, rgba(19,73,128,1) 100%);
+}
+
+// fundo
+.cor_fundo{
+   --ion-background-color:rgb(34,132,230);;
+   --ion-background-color:radial-gradient(circle, rgba(34,132,230,1) 0%, rgba(27,103,179,1) 22%, rgba(19,73,128,1) 60%, rgba(11,44,77,1) 100%);
+}
 .botao{
     width: 100%;
     margin-bottom: 2vh;
-    color: black;
-  
+    color: white;
+    
+ 
   }
   .titulo1{
     
     margin-bottom: 3vh;
   }
   
+  //Css Page
+.titulo{ 
+  margin-top: 1vh;
+  display: flex;
+  justify-content: center;
+  font-size: 6vh;
+  font-weight: 1000;
+  color:black;
+  font-family: poupins;
+  border-bottom: 0.3vh solid #0B2C4D;
+} 
+
+.servico_informacao{
+  margin-bottom: 25vh;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+// card
+ion-card{
+  margin-top: 3vh;
+  border: 0.5vh solid #0B2C4D;
+  border-radius: 1vh;
+  background:white;
+  color: black;
+}
+ion-card ion-card-title{
+  color:black;
+}
+
+// imagem card
+ion-card img{
+  max-height: 50%;
+  min-height: 50%;
+}
+
+// footer
+ion-footer{
+  padding: 5vh;
+
+  background: rgb(4,15,26);
+    background: linear-gradient(190deg, rgba(4,15,26,1) 0%, rgba(11,44,77,1) 35%, rgba(19,73,128,1) 100%);
+}
+.info-footer{
+  text-align: center;
+  font-family: arial;
+}
+.imagem img{
+  width: 50vh;
+  min-width: 30vh;
+}
+
+

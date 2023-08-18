@@ -1,7 +1,27 @@
+// Menu fundo
+.fundo_menu{
+  --ion-toolbar-background:#0B2C4D;
+  --ion-item-background:#040F1A;
+
+}
+ion-button{
+  --background:#0B2C4D; 
+  
+}
+.menu_botao{
+  background: rgb(4,15,26);
+  background: linear-gradient(190deg, rgba(4,15,26,1) 0%, rgba(11,44,77,1) 35%, rgba(19,73,128,1) 100%);
+}
+
+// fundo
+.cor_fundo{
+  --ion-background-color:rgb(34,132,230);;
+  --ion-background-color:radial-gradient(circle, rgba(34,132,230,1) 0%, rgba(27,103,179,1) 22%, rgba(19,73,128,1) 60%, rgba(11,44,77,1) 100%);
+}
 .botao{
     width: 100%;
     margin-bottom: 2vh;
-    color: black;
+    color: white;
   
   }
   .titulo1{
@@ -20,4 +40,21 @@
   color: white;
   text-decoration: none;
 }
+
+// footer
+ion-footer{
+  padding: 5vh;
+
+  background: rgb(4,15,26);
+    background: linear-gradient(190deg, rgba(4,15,26,1) 0%, rgba(11,44,77,1) 35%, rgba(19,73,128,1) 100%);
+}
+.info-footer{
+  text-align: center;
+  font-family: arial;
+}
+.imagem img{
+  width: 50vh;
+  min-width: 30vh;
+}
+
   
