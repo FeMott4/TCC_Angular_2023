@@ -35,16 +35,15 @@ ion-button{
   margin-bottom: 3vh;
 }
 // cards
-.conteudo{
-   
-}
-.centralizacao{
+.centro{
+  margin-top: 5vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
-ion-card{
-  margin-bottom: 4vh;
 
+ion-card{
+  margin-bottom: 6vh;
+  background-color: white; 
   
 }
 // textos
@@ -53,14 +52,18 @@ ion-card h1{
   margin-bottom: 0.5vh;
   text-align: center;
   font-weight: bold;
+  color: black;
+  padding: 3vh;
+
   
 }
 ion-card ion-card-content{
   font-size: medium;
   color: black;
-  padding: 1vh;
+  padding: 3vh;
 
 } 
+
 
 // footer
 ion-footer{

@@ -37,7 +37,7 @@ ion-button{
   justify-content: center;
   font-size: 6vh;
   font-weight: 1000;
-  color:black;
+  color:white;
   font-family: poupins;
   border-bottom: 0.3vh solid #0B2C4D;
 } 
@@ -78,9 +78,11 @@ ion-footer{
   text-align: center;
   font-family: arial;
 }
-.imagem img{
-  width: 50vh;
-  min-width: 30vh;
+.imagem img img{
+  width: 20vh;
+  min-width: 10vh;
+  text-align: center;
+
 }
 
 
