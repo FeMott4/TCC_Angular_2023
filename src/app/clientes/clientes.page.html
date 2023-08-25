@@ -1,40 +1,110 @@
 <ion-content [fullscreen]="true">
 
-  <!-- Barra de navegação -->
+  <!-- Barra de navegação --> 
   
   <ion-menu contentId="main-content">
-    <ion-header>
-      <ion-item>
-        <ion-title class="titulo1">Malvzuco</ion-title>
+    <ion-header class="fundo_menu" >
+      <ion-item >
+        <ion-title class="titulo1">Malvzuco</ion-title> 
       </ion-item>
-
-      <ion-button class="botao" color="white" expand="full" routerLink="/home">Página Incial</ion-button>
-
-      <ion-button class="botao" color="white" expand="full" routerLink="/clientes">Cliente</ion-button>
-
-      <ion-button class="botao" color="white" expand="full" routerLink="/contato">Contato</ion-button>
-    
-      <ion-button class="botao" color="white" expand="full" routerLink="/servico">Serviços</ion-button>
     </ion-header>
-  </ion-menu>
+    <ion-col class="menu_botao">
+      <ion-button class="botao" shape="round" expand="full" routerLink="/home">Página Incial</ion-button>
 
-  
+      <ion-button class="botao"  shape="round" expand="full" routerLink="/clientes">Cliente</ion-button>
 
+      <ion-button class="botao"  shape="round" expand="full" routerLink="/contato">Contato</ion-button>
+    
+      <ion-button class="botao"  shape="round" expand="full" routerLink="/servico">Serviços</ion-button>
+    </ion-col>
+
+  </ion-menu> 
   <div class="ion-page" id="main-content">
     <ion-header>
-      <ion-toolbar>
-        <ion-buttons slot="start">
+      <ion-toolbar class="fundo_menu">
+        <ion-buttons slot="start" >
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title>Malvzuco</ion-title>
-        
+        <ion-title><img class="logo" src="../../assets/icon/logo-malvzuco-navbar.png" alt="img"></ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding">  </ion-content>
-  </div>
 
-  <!--Corpo-->
+    <!-- Corpo -->
+    <ion-content class="ion-padding" class="cor_fundo">
+      <ion-row class="form" >
+        <ion-col size-lg="4" size-md="6" size="12">
+                 
+            <ion-list>
+              <h2>Simulação de Orçamento</h2>
+              <ion-item>
+                <ion-select label="Escolha o serviço" label-placement="floating">
+                  <ion-select-option value="instalacao_ele">Instalação de parte Elétrica</ion-select-option>
+                  <ion-select-option value="instalacao_ar">Instalação de ar condicionado</ion-select-option>
+                  <ion-select-option value="manutencao_predial">Manutenção predial de elétrica/hidraulica</ion-select-option>
+                  <ion-select-option value="manutencao_residencial">Manutenção escolar e residencial de elétrica/hidraulica</ion-select-option>
+                </ion-select>
+              </ion-item>
+ 
+              <ion-item>
+                <ion-select label="Escolha a cidade" label-placement="floating">
+                  <ion-select-option value="boituva">Boituva</ion-select-option>
+                  <ion-select-option value="capela do alto">Capela do Alto</ion-select-option>
+                  <ion-select-option value="ipero">Iperó</ion-select-option>
+                  <ion-select-option value="sorocaba">Sorocaba</ion-select-option>
+                  <ion-select-option value="tatui">Tatuí</ion-select-option>
+               
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-input label="Digite o endereço" label-placement="floating"placeholder="Enter text" required></ion-input>
+              </ion-item>
+          
+              <ion-item>
+                <ion-input label="Telefone" type="tel" label-placement="floating" placeholder="(DD) ...." required></ion-input>
+              </ion-item>
+
+              <ion-button class="botao_consulta" color="primary" expand="full" shape="round" type="submit">Consultar</ion-button>
+
+            </ion-list>
+        </ion-col>
+      </ion-row> 
+      
+      <ion-row class="imagem">
+        <ion-col size-lg="12" size-md="12" size="12">
+          <img src="../../assets/icon/logo-malvzuco-navbar.png" alt="img">
+        </ion-col>
+      </ion-row>
+
+      <ion-footer>
+        <ion-row >
+          <ion-col class="info-footer" size-lg="3" size-md="6" size-sm="12">
+            <h4>E-MAIL:</h4> 
+            <h5>malvzuco@yahoo.com.br</h5> <br>
    
+            <h4>TELEFONE:</h4> 
+            <h5>+15 99762-6275</h5>
+          </ion-col>
+
+          <ion-col class="info-footer" size-lg="3" size-md="6" size-sm="12">
+            <h4 >MAPA DO SITE</h4>
+            <div>
+              <ion-button class="botao"  shape="round" expand="full" routerLink="/home">Página Incial</ion-button>
+              <ion-button class="botao"  shape="round" expand="full" routerLink="/clientes">Cliente</ion-button>
+              <ion-button class="botao"  shape="round" expand="full" routerLink="/contato">Contato</ion-button>
+              <ion-button class="botao"  shape="round" expand="full" routerLink="/servico">Serviços</ion-button>
+            </div>
+          </ion-col>
+
+          <ion-col class="imagem" size-lg="6" size-md="10" size-sm="12">
+            <img src="../../assets/icon/logo-malvzuco.png" alt="imagem da logo">
+          </ion-col>
+
+          
+        </ion-row>
+      </ion-footer>
+    </ion-content>
+  </div>
+  
 
   <!-- Rodapé -->
 

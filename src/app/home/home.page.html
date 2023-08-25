@@ -1,26 +1,32 @@
 <ion-content [fullscreen]="true">
-
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <!-- Barra de navegação -->
   
-  <ion-menu contentId="main-content">
-    <ion-header>
-      <ion-item>
+  
+  <ion-menu contentId="main-content" >
+    <ion-header class="fundo_menu" > 
+      <ion-item >
         <ion-title class="titulo1">Malvzuco</ion-title>
       </ion-item>
-
-      <ion-button class="botao" color="white" expand="full" routerLink="/home">Página Incial</ion-button>
-
-      <ion-button class="botao" color="white" expand="full" routerLink="/clientes">Cliente</ion-button>
-
-      <ion-button class="botao" color="white" expand="full" routerLink="/contato">Contato</ion-button>
-    
-      <ion-button class="botao" color="white" expand="full" routerLink="/servico">Serviços</ion-button>
     </ion-header>
+
+    <ion-col class="menu_botao">
+      <ion-button class="botao" shape="round" expand="full" routerLink="/home">Página Incial</ion-button>
+
+      <ion-button class="botao"  shape="round" expand="full" routerLink="/clientes">Cliente</ion-button>
+
+      <ion-button class="botao"  shape="round" expand="full" routerLink="/contato">Contato</ion-button>
+    
+      <ion-button class="botao"  shape="round" expand="full" routerLink="/servico">Serviços</ion-button>
+    </ion-col>
+
   </ion-menu>
 
   <div class="ion-page" id="main-content">
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar class="fundo_menu">
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -28,44 +34,107 @@
         
       </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding">  </ion-content>
+
+    <!-- Corpo -->
+    
+    <ion-content class="ion-padding" class="cor_fundo">
+      <ion-row class="centro" >
+        <ion-col class="conteudo" size-lg="3" size-md="12" size-sm="12">
+          <ion-card>
+            <img alt="Empresa" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+            <ion-card-header>
+              <ion-card-title><h1>História</h1></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Empresa malvzuco foi criada no ano de 2008  quando ouve uma licitação para empresas
+              na cidade de iperó com intuito de contratar empresas para prestação serviços de
+              manutenção nas escolas da cidade. Com a prestação de serviços nas escolas surgiu a 
+              ideia de prestar serviços além da prefeitura serviços de hidráulica,  elétrica e 
+              instalação e manutenção de ar condicionados para as pessoas que precisacem dos tais serviços.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col class="conteudo" size-lg="3" size-md="6" size-sm="12">
+          <ion-card>
+            <img alt="Foto da Região" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+            <ion-card-header>
+              <ion-card-title><h1>Região localizada</h1></ion-card-title>
+
+            </ion-card-header>
+          
+            <ion-card-content>
+              Iperó é a cidade onde a empresa está localizada atualmente,Iperó é uma cidade localizada 
+              no estado de São Paulo, no Brasil. Com uma população de cerca de 32 mil habitantes, Iperó é conhecida
+              por ser sede da Companhia Brasileira de Alumínio (CBA), uma das maiores produtoras de alumínio do país.
+              Além da indústria do alumínio, a economia de Iperó também é impulsionada pela produção agrícola, com destaque
+              para o cultivo de milho, soja e cana-de-açúcar.
+              Além de ter um dos principais lugares historicos do país a fazenda Ipanema, que contribuiu para diversos avanços no país.
+            
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col class="conteudo" size-lg="3" size-md="6" size-sm="12">
+          <ion-card>
+            <img alt="Empresa" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+            <ion-card-header>
+              <ion-card-title><h1>Sobre nós</h1></ion-card-title>
+            </ion-card-header>
+            <ion-card-content><p>
+              Nós da empresa Malvzuco prestamos Serviços como, Elétrica, Hidráulica 
+              e instalação de Ar condicionados todos os funcionário da empresa tem um curso para cada 
+              prestação de serviços disponibilizadas pela empresa.todos os nossos funcionários são orientados
+              a sempre fazer os serviços conforme o orçamento e buscando sempre satisfazer a vontade de nossos clientes. 
+              Já estampos há 15 anos dentro do mercado de prestação de serviços. Somos pioneiros no ramo de instalação e
+              manutenção de ar condicionado na cidade de iperó.</p>
+            
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+ 
+
+
+      <ion-footer>
+        <ion-row >
+          <ion-col class="info-footer" size-lg="3" size-md="6" size-sm="12">
+            <h4>E-MAIL:</h4> 
+            <h5>malvzuco@yahoo.com.br</h5> <br>
+   
+            <h4>TELEFONE:</h4> 
+            <h5>+15 99762-6275</h5>
+          </ion-col>
+
+          <ion-col class="info-footer" size-lg="3" size-md="6" size-sm="12">
+            <h4 >MAPA DO SITE</h4>
+            <div>
+              <ion-button class="botao"  shape="round" expand="full" routerLink="/home">Página Incial</ion-button>
+              <ion-button class="botao"  shape="round" expand="full" routerLink="/clientes">Cliente</ion-button>
+              <ion-button class="botao"  shape="round" expand="full" routerLink="/contato">Contato</ion-button>
+              <ion-button class="botao"  shape="round" expand="full" routerLink="/servico">Serviços</ion-button>
+            </div>
+          </ion-col>
+
+          <ion-col class="imagem" size-lg="6" size-md="10" size-sm="12">
+            <img src="../../assets/icon/logo-malvzuco.png" alt="imagem da logo">
+          </ion-col>
+
+          
+        </ion-row>
+      </ion-footer>
+ 
+      
+    </ion-content>
   </div>
 
-  <!--Corpo-->
-  <ion-row>
-    <ion-col class="conteudo" size="11" size-lg="8" size-xl="6">
-      <h2>História</h2>
-      <p>Empresa malvzuco foi criada no ano de 2008  quando ouve uma licitação para empresas
-        na cidade de iperó com intuito de contratar empresas para prestação serviços de
-        manutenção nas escolas da cidade. Com a prestação de serviços nas escolas surgiu a 
-        ideia de prestar serviços além da prefeitura serviços de hidráulica,  elétrica e 
-        instalação e manutenção de ar condicionados para as pessoas que precisacem dos tais serviços.</p>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col class="conteudo" size="11" size-lg="8" size-xl="6">
-      <h2>Região localizada</h2>
-      <p>Iperó é a cidade onde a empresa está localizada atualmente,Iperó é uma cidade localizada 
-        no estado de São Paulo, no Brasil. Com uma população de cerca de 32 mil habitantes, Iperó é conhecida
-        por ser sede da Companhia Brasileira de Alumínio (CBA), uma das maiores produtoras de alumínio do país.
-        Além da indústria do alumínio, a economia de Iperó também é impulsionada pela produção agrícola, com destaque
-        para o cultivo de milho, soja e cana-de-açúcar.
-        Além de ter um dos principais lugares historicos do país a fazenda Ipanema, que contribuiu para diversos avanços no país.</p>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col class="conteudo" size="11" size-lg="8" size-xl="6">
-      <h2>Sobre nós</h2>
-      <p>Nós da empresa Malvzuco prestamos Serviços como, Elétrica, Hidráulica 
-        e instalação de Ar condicionados todos os funcionário da empresa tem um curso para cada 
-        prestação de serviços disponibilizadas pela empresa.todos os nossos funcionários são orientados
-        a sempre fazer os serviços conforme o orçamento e buscando sempre satisfazer a vontade de nossos clientes. 
-        Já estampos há 15 anos dentro do mercado de prestação de serviços. Somos pioneiros no ramo de instalação e
-        manutenção de ar condicionado na cidade de iperó.</p>
-    </ion-col>
-  </ion-row>
+  
   <!-- Rodapé -->
 
   
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   
 </ion-content>
