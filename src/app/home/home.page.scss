@@ -3,37 +3,46 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-// Menu fundo 
+
+// cor de fundo
+.cor_fundo{
+  --ion-background-color:rgb(34,132,230);;
+  --ion-background-color:radial-gradient(circle, rgba(34,132,230,1) 0%, rgba(27,103,179,1) 22%, rgba(19,73,128,1) 60%, rgba(11,44,77,1) 100%);
+}
+
+// Menu fundo parte de dentro
 .fundo_menu{
   --ion-toolbar-background:#0B2C4D;
   --ion-item-background:#040F1A;
-
 }
-ion-button{
+ion-button{ 
   --background:#0B2C4D;
-  
 }
 .menu_botao{
   background: rgb(4,15,26);
   background: linear-gradient(190deg, rgba(4,15,26,1) 0%, rgba(11,44,77,1) 35%, rgba(19,73,128,1) 100%);
 }
+.titulo1{
+  margin-top: 1vh; 
+  margin-bottom: 3vh;
+  color: white;
+  text-align: center;
+}
 
-// fundo
-
-  .cor_fundo{
-    --ion-background-color:rgb(34,132,230);;
-    --ion-background-color:radial-gradient(circle, rgba(34,132,230,1) 0%, rgba(27,103,179,1) 22%, rgba(19,73,128,1) 60%, rgba(11,44,77,1) 100%);
- }
-
+// menu superior
+.logo{
+  height: 5vh;
+}  
 .botao{
   width: 100%;
   margin-bottom: 2vh;
   color: white;
   margin-top: 1vh;
 }
-.titulo1{
-  margin-bottom: 3vh;
+.titulo_nav{
+  color: white;
 }
+
 // cards
 .centro{
   margin-top: 5vh;
@@ -43,34 +52,30 @@ ion-button{
 
 ion-card{
   margin-bottom: 6vh;
-  background-color: white; 
-  
 }
+
 // textos
 ion-card h1{
   margin-top: 1vh;
   margin-bottom: 0.5vh;
   text-align: center;
   font-weight: bold;
-  color: black;
+  color: white;
   padding: 3vh;
-
-  
 }
+
 ion-card ion-card-content{
   font-size: medium;
-  color: black;
+  color: white;
   padding: 3vh;
-
 } 
-
 
 // footer
 ion-footer{
   padding: 5vh;
-
+  color: white;
   background: rgb(4,15,26);
-    background: linear-gradient(190deg, rgba(4,15,26,1) 0%, rgba(11,44,77,1) 35%, rgba(19,73,128,1) 100%);
+  background: linear-gradient(190deg, rgba(4,15,26,1) 0%, rgba(11,44,77,1) 35%, rgba(19,73,128,1) 100%);
 }
 .info-footer{
   text-align: center;
