@@ -39,7 +39,16 @@ ion-button{
 // Page
 .conteudo{
   text-align: center;
-  margin-bottom: 30vh;
+  margin-top:4vh;
+}
+
+// mapa
+.mapa{
+  max-width: 60vh;
+  min-width: 30vh;
+  max-height: 60vh;
+  min-height: 30vh;
+  margin-top: 2vh;
 }
 
 // Contato whats
@@ -50,6 +59,7 @@ ion-button{
 
 // footer
 ion-footer{
+  margin-top:10vh;
   padding: 5vh;
   background: rgb(4,15,26);
   background: linear-gradient(190deg, rgba(4,15,26,1) 0%, rgba(11,44,77,1) 35%, rgba(19,73,128,1) 100%);

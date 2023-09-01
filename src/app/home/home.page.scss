@@ -52,6 +52,17 @@ ion-button{
 
 ion-card{
   margin-bottom: 6vh;
+  max-height:110vh;
+  min-height:80vh;
+  text-align: center;
+}
+// card imagens
+ion-card img{
+  max-height: 40vh;
+  min-height: 30vh;
+  min-width: 30%;
+  max-width: 80%;
+  padding: 4vh;
 }
 
 // textos
